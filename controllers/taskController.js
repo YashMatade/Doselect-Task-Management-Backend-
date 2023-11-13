@@ -3,8 +3,7 @@ const Task = require('../models/taskModel');
 // Get all tasks
 const getAllTasks = async (req, res) => {
     try {
-        const tasks = await Task.find();
-        res.json(tasks);
+       // Write your code here
     } catch (error) {
         res.status(500).json({ error: error.message });
     }
@@ -14,9 +13,7 @@ const getAllTasks = async (req, res) => {
 const getTaskById = async (req, res) => {
     const { id } = req.params;
     try {
-        const task = await Task.findById(id);
-        if (!task) return res.status(404).json({ message: 'Task not found' });
-        res.json(task);
+        // write your code here
     } catch (error) {
         res.status(500).json({ error: error.message });
     }
@@ -26,9 +23,7 @@ const getTaskById = async (req, res) => {
 const createTask = async (req, res) => {
     const { title, description } = req.body;
     try {
-        const task = new Task({ title, description });
-        await task.save();
-        res.status(201).json(task);
+       // write your code here
     } catch (error) {
         res.status(500).json({ error: error.message });
     }
@@ -39,13 +34,7 @@ const updateTaskById = async (req, res) => {
     const { id } = req.params;
     const { title, description } = req.body;
     try {
-        const updatedTask = await Task.findByIdAndUpdate(
-            id,
-            { title, description },
-            { new: true }
-        );
-        if (!updatedTask) return res.status(404).json({ message: 'Task not found' });
-        res.json(updatedTask);
+       // write your code here
     } catch (error) {
         res.status(500).json({ error: error.message });
     }
@@ -55,9 +44,7 @@ const updateTaskById = async (req, res) => {
 const deleteTaskById = async (req, res) => {
     const { id } = req.params;
     try {
-        const deletedTask = await Task.findByIdAndDelete(id);
-        if (!deletedTask) return res.status(404).json({ message: 'Task not found' });
-        res.json(deletedTask);
+      // write your code here
     } catch (error) {
         res.status(500).json({ error: error.message });
     }
