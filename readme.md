@@ -19,7 +19,7 @@ The primary goal of this project is to facilitate the management of tasks throug
 - **Task Updates:** Update existing tasks with modified titles and descriptions.
 - **Task Deletion:** Remove tasks that are no longer needed.
 
-## Project Structure
+## Project Structure (TO DO)
 
 The main codebase resides in the `main` branch, encompassing the entire project, including the main logic. The `Stubs` branch is provided for candidates to fill in the code in the `taskController.js` file under the `controllers` folder.
 
@@ -29,6 +29,7 @@ To run the server, ensure you have the latest Node.js installed on your system, 
 
 1. Clone the repository and switch to the `Stubs` branch.
 2. Install the required Node modules by running `npm install`.
+3. Start the application by running `npm start`
 
 ## Project Architecture (BACKEND)
 
@@ -38,9 +39,15 @@ The project follows the MVC (Model-View-Controller) architecture:
 - **Controller:** The `controllers` folder houses the main logic for tasks.
 - **View (Routes):** The `routes` folder in the `routes` directory handles routing.
 
-## Writing Code
+## Development Instructions
 
-Navigate to the `taskController.js` file under the `controllers` folder in the `Stubs` branch. This is where you will be writing your code.
+Navigate to the `taskController.js` file under the `controllers` folder in the `Stubs` branch. This is where you will be writing your code for achieving the following functionalities
+1. Get all tasks
+2. Get a specific task by ID
+3. Create a new task
+4. Update a task by ID
+5. Delete a task by ID
+
 
 ## Testing
 
