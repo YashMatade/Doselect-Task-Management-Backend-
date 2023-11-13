@@ -19,7 +19,7 @@ The primary goal of this project is to facilitate the management of tasks throug
 - **Task Updates:** Update existing tasks with modified titles and descriptions.
 - **Task Deletion:** Remove tasks that are no longer needed.
 
-## Project Structure
+## Project Structure (TO DO)
 
 The main codebase resides in the `main` branch, encompassing the entire project, including the main logic. The `Stubs` branch is provided for candidates to fill in the code in the `taskController.js` file under the `controllers` folder.
 
