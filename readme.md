@@ -39,7 +39,7 @@ The project follows the MVC (Model-View-Controller) architecture:
 - **Controller:** The `controllers` folder houses the main logic for tasks.
 - **View (Routes):** The `routes` folder in the `routes` directory handles routing.
 
-## Development Instructions
+## Developers Instructions
 
 Navigate to the `taskController.js` file under the `controllers` folder in the `Stubs` branch. This is where you will be writing your code for achieving the following functionalities
 1. Get all tasks
